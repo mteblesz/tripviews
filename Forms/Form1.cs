@@ -17,6 +17,22 @@ namespace tripviews
             InitializeComponent();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //pictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox1.Load(openFileDialog1.FileName);
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            else
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+
+        }
     }
 }
