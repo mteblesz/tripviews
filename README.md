@@ -1,2 +1,2 @@
 # tripviews
-Destop app for comfortable viewing photos &amp; movies taken on a trip
+Destop app for comfortable viewing photos &amp; videos taken on a trip
